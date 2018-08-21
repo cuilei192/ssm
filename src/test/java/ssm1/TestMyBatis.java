@@ -32,4 +32,12 @@ public class TestMyBatis {
         // logger.info("值："+user.getUserName());  
         logger.info(JSON.toJSONString(user));  
     }  
+	
+	@Test  
+    public void test2() {  
+        User user = userService.getUserById(1);  
+        // System.out.println(user.getUserName());  
+        // logger.info("值："+user.getUserName());  
+        logger.info(JSON.toJSONString(user));  
+    }  
 }  
